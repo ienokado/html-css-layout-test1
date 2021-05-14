@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper, header, nav, main, aside, footer {
+            border: 1px solid #000;
+            padding: 16px;
+            margin: 8px;
+        }
+        #wrapper {
+            color: #000;
+            background-color: #fff;
+        }
+        header, nav, main, aside, footer {
+            font-weight: bold;
+            color: #000;
+            background-color: #aaa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+        header .button-container {
+            display: flex;
+        }
+        header .button-container .button {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        nav ul {
+            width: 100%;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            border: 1px solid #000;
+            padding: 8px;
+            width: 20%;
+            margin-left: 4px;
+        }
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+        .flex {
+            display: flex;
+        }
+        .description {
+            width: 40%;
+            margin-left: 16px;
+        }
+        img {
+            width: 60%;
+            height: 100%;
+        }
+        main {
+            width: 70%;
+            height: 100%;
+        }
+        aside {
+            width: 30%;
+        }
+        aside ul {
+            width: 100%;
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        aside ul li {
+            border: 1px solid #000;
+            padding: 8px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo">Header</div>
+            <div class="button-container">
+                <div class="button">Button1</div>
+                <div class="button">Button2</div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Nav1</li>
+                <li>Nav2</li>
+                <li>Nav3</li>
+                <li>Nav4</li>
+                <li>Nav5</li>
+            </ul>
+        </nav>
+
+        <div class="flex">
+            <main>
+                <div class="flex">
+                    <img src="https://dummyimage.com/400x332/001eff/ffffff.jpg&text=%E3%83%86%E3%82%B9%E3%83%88%E7%94%BB%E5%83%8F" alt="">
+                    <div class="description">
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                        <p>テストテストテスト</p>
+                        <p>テストテストテスト</p>
+                    </div>
+                </div>
+            </main>
+
+            <aside>
+                Aside
+                <ul>
+                    <li>Side1</li>
+                    <li>Side2</li>
+                    <li>Side3</li>
+                    <li>Side4</li>
+                    <li>Side5</li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
